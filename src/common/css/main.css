@@ -1,0 +1,7 @@
+body {
+    background-color: burlywood;
+}
+
+.bg {
+    background: url('../img/a.jpg')
+}
