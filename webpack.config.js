@@ -11,7 +11,8 @@ const buildTargeDir = 'dist';
 module.exports = {
     entry: {
         dashbord: './src/dashbord/js/index.js',
-        hello: './src/hello/js/index.js'
+        hello: './src/hello/js/index.js',
+        es6: './src/es6/js/string.js'
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -141,6 +142,14 @@ module.exports = {
             chunks: ['hello'],
             filename: 'page/hello.html',
             template: './src/hello/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            // minify: {
+            //     collapseWhitespace: true
+            // },
+            chunks: ['es6'],
+            filename: 'page/es6.html',
+            template: './src/es6/index.html'
         })
     ]
 };
