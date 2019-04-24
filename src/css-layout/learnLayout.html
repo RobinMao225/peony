@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>learn css layout</title>
+    <style>
+        .main {
+            display: block;
+            max-width: 600px;
+            margin: 0px auto;
+        }
+        .simple {
+            width: 500px;
+            margin: 20px auto;
+            border-color: black;
+        }
+        .fancy {
+            width: 500px;
+            margin: 20px auto;
+            padding: 50px;
+            border-width: 10px;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://zh.learnlayout.com">学习css布局</a>
+    <span>
+   cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+    cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+    </span>
+    <h2>------------------------</h2>
+   <p>如果你只想把所有内容都塞进一栏里，那么不用设置任何布局也是OK的。然而，如果用户把浏览器窗口调整的很大，
+       这时阅读网页会非常难受：读完每一行之后，你的视觉焦点要从右到左移动一大段距离。试着调整下浏览器窗口大小你就明白我的意思了！
+   </p>
+   <p>在解决这个问题之前，我们需要了解一个很重要的属性： display</p>
+   <div class="main">
+        设置块级元素的 width 可以防止它从左到右撑满整个容器。然后你就可以设置左右外边距为 auto 来使其水平居中。
+        元素会占据你所指定的宽度，然后剩余的宽度会一分为二成为左右外边距。
+        唯一的问题是，当浏览器窗口比元素的宽度还要窄时，浏览器会显示一个水平滚动条来容纳页面。让我们再来改进下这个方案...
+   </div>
+   <div class="simple">
+       ssssssssssssss
+   </div>
+   <div class="fancy">
+       ffffffffffff
+   </div>
+</body>
+
+</html>
