@@ -13,24 +13,30 @@
         .simple {
             width: 500px;
             margin: 20px auto;
-            border-color: black;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
         .fancy {
             width: 500px;
-            margin: 20px auto;
             padding: 50px;
-            border-width: 10px;
-            border-color: red;
+            border: solid blue 10px;
+            margin: 20px auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
     </style>
 </head>
 
 <body>
+      <span>
+          cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+          cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      </span>
+      <div></div>
     <a href="http://zh.learnlayout.com">学习css布局</a>
-    <span>
-   cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-    cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-    </span>
+
     <h2>------------------------</h2>
    <p>如果你只想把所有内容都塞进一栏里，那么不用设置任何布局也是OK的。然而，如果用户把浏览器窗口调整的很大，
        这时阅读网页会非常难受：读完每一行之后，你的视觉焦点要从右到左移动一大段距离。试着调整下浏览器窗口大小你就明白我的意思了！

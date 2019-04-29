@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>position lab</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .base {
+                max-width: 500px;
+                margin: 0 auto;
+                border: solid 1px;
+            }
+
+            .static {
+                position: static;
+                border-color: blue;
+            }
+
+            .relative1 {
+               position: relative;
+               border-color:red;
+            }
+
+            .relative2 {
+                position: relative;
+                top: -20px;
+                left: 20px;
+                border-color: brown;
+            }
+
+            .fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                border-color: yellow;
+            }
+
+            .absolute {
+                border-color: rgb(76, 0, 255);
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="base static">
+            static 是默认值。任意 position: static; 的元素不会被特殊的定位。一个 static 元素表示它不会被“positioned”，
+            一个 position属性被设置为其他值的元素表示它会被“positioned”。
+        </div>
+        <div class="base relative1">
+            relative 表现的和 static 一样，除非你添加了一些额外的属性。
+        </div>
+        <div class="base relative2">
+            在一个相对定位（position属性的值为relative）的元素上设置 top 、 right 、 bottom 和 left 属性会使其偏离其正常位置。
+            其他的元素的位置则不会受该元素的影响发生位置改变来弥补它偏离后剩下的空隙
+        </div>
+        <div class="base">
+            一个固定定位（position属性的值为fixed）元素会相对于视窗来定位，这意味着即便页面滚动，它还是会停留在相同的位置。
+            和 relative 一样， top 、 right 、 bottom 和 left属性都可用。
+        </div>
+        <div class="base fixed">
+            Hello！暂时不要太关注我哦。
+        </div>
+        <div class="base" style="position:relative;">
+            这个元素是相对定位的。如果它是 position: static; 那么它的绝对定位子元素会跳过它直接相对于body元素定位。
+            <div class="base absolute">
+                这个元素是绝对定位的。它相对于它的父元素定位。
+            </div>
+        </div>
+    </body>
+</html>
