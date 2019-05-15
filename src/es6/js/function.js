@@ -126,3 +126,11 @@ constructParamTest();
 
 funcDefaultParamsTest();
 thisObjTest();
+
+(function temp() {
+    for(let i = 0; i < 100; i++) {
+        setTimeout(function () {
+            console.log(i);
+        }, 1000);
+    }
+})();
